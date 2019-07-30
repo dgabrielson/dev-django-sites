@@ -1,0 +1,39 @@
+{
+    "DEBUG": true,
+    "ALLOWED_HOSTS": ["localhost", "127.0.0.1"],
+    "HTTPS_ENABLED": false,
+    "EMAIL_BACKEND": "django.core.mail.backends.console.EmailBackend",
+    "DEFAULT_FROM_EMAIL": "no-reply@bayes01.stats.umanitoba.ca",
+    "SERVER_EMAIL": "django-error@bayes01.stats.umanitoba.ca",
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "skaro_dev",
+            "USER": "skaro",
+            "PASSWORD": ".az/kbJ[z0^R",
+            "HOST": "db00",
+            "PORT": ""
+        },
+        "ldap": {
+            "ENGINE": "ldapdb.backends.ldap",
+            "NAME": "ldap://ldap00",
+            "PASSWORD": "NuzuPiwjZuma8;",
+            "USER": "cn=admin,dc=math,dc=umanitoba,dc=ca"
+        }
+    },
+    "MEDIA_ROOT": "/var/lib/media",
+    "STATIC_ROOT": "/var/lib/static",
+    "LDAP_DC_DN": "dc=math,dc=umanitoba,dc=ca",
+    "LDAP_USER_BASE_DN": "ou=people,dc=math,dc=umanitoba,dc=ca",
+    "LDAP_GROUP_BASE_DN": "ou=groups,dc=math,dc=umanitoba,dc=ca",
+    "AUTH_LDAP_SERVER_URI": "ldap://ldap00",
+    "AUTH_LDAP_BIND_DN": "cn=admin,dc=math,dc=umanitoba,dc=ca",
+    "AUTH_LDAP_BIND_PASSWORD": "NuzuPiwjZuma8;",
+    "AUTH_LDAP_USER_DN_TEMPLATE": "uid=%(user)s,ou=people,dc=math,dc=umanitoba,dc=ca",
+    "AUTH_LDAP_START_TLS": false,
+    "AUTH_LDAP_USER_ATTR_MAP": {
+        "first_name": "givenName",
+        "last_name": "sn",
+        "email": "mail"
+        }
+}

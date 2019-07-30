@@ -1,0 +1,1 @@
+CREATE DATABASE www_stats WITH OWNER django;

@@ -1,0 +1,12 @@
+-r ../common-reqs.txt
+
+setproctitle
+psycopg2
+
+-e hg+ssh://dave@home.gabrielson.ca/django-uofm#egg=django-uofm
+-e hg+ssh://dave@home.gabrielson.ca/django-shouts#egg=django-shouts
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-pages#egg=django-dept-pages
+
+-e git+https://github.com/jlaine/django-ldapdb.git#egg=django-ldapdb
+-e hg+ssh://dave@home.gabrielson.ca/django-authldap-utils#egg=django-authldap-utils
+-e hg+ssh://dave@home.gabrielson.ca/django-devldap-siteconf#egg=django-devldap-siteconf

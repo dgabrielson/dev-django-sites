@@ -1,0 +1,36 @@
+{
+    "DEBUG": true,
+    "ALLOWED_HOSTS": ["localhost", "127.0.0.1"],
+    "HTTPS_ENABLED": false,
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "gauss_web",
+            "USER": "gauss",
+            "PASSWORD": "gauss",
+            "HOST": "localhost",
+            "PORT": ""
+        },
+        "ldap": {
+            "ENGINE": "ldapdb.backends.ldap",
+            "NAME": "ldap://localhost:13389",
+            "PASSWORD": "XXXXXXXX",
+            "USER": "cn=admin,dc=math,dc=umanitoba,dc=ca"
+        }
+    },
+    "MEDIA_ROOT": "/Users/gabriels/__storage/gauss/media",
+    "STATIC_ROOT": "/Users/gabriels/__storage/gauss/static",
+    "LDAP_DC_DN": "dc=math,dc=umanitoba,dc=ca",
+    "LDAP_USER_BASE_DN": "ou=people,dc=math,dc=umanitoba,dc=ca",
+    "LDAP_GROUP_BASE_DN": "ou=groups,dc=math,dc=umanitoba,dc=ca",
+    "AUTH_LDAP_SERVER_URI": "ldap://localhost",
+    "AUTH_LDAP_BIND_DN": "cn=admin,dc=math,dc=umanitoba,dc=ca",
+    "AUTH_LDAP_BIND_PASSWORD": "XXXXXXXX",
+    "AUTH_LDAP_USER_DN_TEMPLATE": "uid=%(user)s,ou=people,dc=math,dc=umanitoba,dc=ca",
+    "AUTH_LDAP_START_TLS": false,
+    "AUTH_LDAP_USER_ATTR_MAP": {
+        "first_name": "givenName",
+        "last_name": "sn",
+        "email": "mail"
+        }
+}

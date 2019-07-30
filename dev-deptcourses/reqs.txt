@@ -1,0 +1,10 @@
+-r ../common-reqs.txt
+
+Django
+psycopg2
+python-memcached
+
+
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-classes#egg=django-dept-classes
+-e hg+ssh://dave@home.gabrielson.ca/django-deptcourses-siteconf#egg=django-deptcourses-siteconf
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-courseplanning#egg=django-dept-courseplanning

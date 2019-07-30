@@ -1,0 +1,7 @@
+-r ../common-reqs.txt
+
+Django
+psycopg2
+
+-e hg+ssh://dave@home.gabrielson.ca/django-rsyslogdb#egg=django-rsyslog
+-e hg+ssh://dave@home.gabrielson.ca/django-logsrv-siteconf#egg=django-logsrv-siteconf

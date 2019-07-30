@@ -1,0 +1,59 @@
+{
+    "DEBUG": true,
+    "USE_DEBUG_TOOLBAR": true,
+    "ALLOWED_HOSTS": ["localhost", "127.0.0.1"],
+    "AUTH_LDAP_BIND_DN": "XXXXXXXX",
+    "AUTH_LDAP_BIND_PASSWORD": "XXXXXXXX",
+    "HTTPS_ENABLED": false,
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "math_site",
+            "USER": "mathapp",
+            "PASSWORD": "devtest",
+            "HOST": "127.0.0.1",
+            "PORT": ""
+        }
+    },
+    "CACHES": {
+        "default": {
+            "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+            "LOCATION": "stats-site"
+        }
+    },
+    "SITE_ID": 1,
+    "MEDIA_ROOT": "/Users/gabriels/__storage/math/media",
+    "STATIC_ROOT": "/Users/gabriels/__storage/math/static",
+    "HAYSTACK_CONNECTIONS": {
+          "default": {
+              "ENGINE": "haystack.backends.whoosh_backend.WhooshEngine",
+              "PATH": "/Users/gabriels/__storage/math/whoosh",
+              "STORAGE": "file",
+              "POST_LIMIT": 134217728,
+              "INCLUDE_SPELLING": false,
+              "BATCH_SIZE": 100
+          }
+      },
+    "GRADUATE_STUDENT_CONFIG": {
+        "jsi18n_url": "/jsi18n/",
+        "directory:typefilter_list": [
+            ["graduate-students", "active"]
+        ],
+        "directory:graduation_date_cutoff": null,
+        "directory:defense_date_grace": null,
+        "storage_kwargs": {
+            "location": "/Users/gabriels/__storage/math/gradstudent-paperwork"
+        },
+        "use_sendfile": false
+    },
+    "FILESHARE_CONFIG": {
+        "share_path": "/Users/gabriels/__storage/math/protected/fileshare"
+    },
+    "EXAMS_CONFIG": {
+        "from_json:default_url": "https://www.stats.umanitoba.ca/_files/final-exam-schedule-json",
+        "exam_sections:restrict_advertised": false
+    },
+    "PUBLICATIONS_CONFIG": {
+        "inline-math-mode-rewrite": true
+    }
+}

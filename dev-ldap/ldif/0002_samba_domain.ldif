@@ -1,0 +1,5 @@
+
+dn: sambaDomainName=math,{{ LDAP_BASE_DN }}
+objectClass: sambaDomain
+sambaSID: S-1-5-21-0
+sambaDomainName: files

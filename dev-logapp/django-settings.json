@@ -1,0 +1,20 @@
+{
+    "DEBUG": true,
+    "USE_DEBUG_TOOLBAR": true,
+    "SECRET_KEY": "some-dev-secret-key",
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "rsyslog",
+            "USER": "rsyslog",
+            "PASSWORD": "rsyslog-dev",
+            "HOST": "localhost",
+            "PORT": ""
+        }
+    },
+    "MEDIA_ROOT": "/Users/gabriels/__storage/logsrv/media",
+    "STATIC_ROOT": "/Users/gabriels/__storage/logsrv/static",
+    "MEDIA_URL": "/media/",
+    "STATIC_URL": "/static/",
+    "RSYSLOG_HOST_CHOICES": []
+}

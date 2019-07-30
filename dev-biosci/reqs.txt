@@ -1,0 +1,7 @@
+-r ../common-reqs.txt
+
+psycopg2
+
+-e hg+ssh://dave@home.gabrielson.ca/django-biosci-siteconf#egg=django-biosci-siteconf
+
+-e hg+ssh://dave@home.gabrielson.ca/django-science-templates#egg=django-science-templates

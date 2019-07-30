@@ -1,0 +1,6 @@
+-r ../common-reqs.txt
+
+Django
+-e hg+ssh://dave@home.gabrielson.ca/django-dsign-siteconf#egg=django-dsign-siteconf
+-e hg+ssh://dave@home.gabrielson.ca/django-digital-signage#egg=django-digital-signage
+

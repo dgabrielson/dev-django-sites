@@ -1,0 +1,11 @@
+dn: ou=People,{{ LDAP_BASE_DN }}
+changeType: add
+objectClass: organizationalUnit
+objectClass: top
+ou: People
+
+dn: ou=Groups,{{ LDAP_BASE_DN }}
+changeType: add
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups

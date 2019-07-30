@@ -1,0 +1,2 @@
+-r ../common-reqs.txt
+-r core-dev-reqs.txt

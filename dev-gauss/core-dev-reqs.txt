@@ -1,0 +1,7 @@
+psycopg2
+
+-e git+https://github.com/jlaine/django-ldapdb.git#egg=django-ldapdb
+-e hg+ssh://dave@home.gabrielson.ca/django-eparch#egg=django-eparch
+-e hg+ssh://dave@home.gabrielson.ca/django-authldap-utils#egg=django-authldap-utils
+-e hg+ssh://dave@home.gabrielson.ca/django-science-templates#egg=django-science-templates
+-e hg+ssh://dave@home.gabrielson.ca/django-gauss-siteconf#egg=django-gauss-siteconf

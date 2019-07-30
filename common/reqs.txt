@@ -1,0 +1,8 @@
+wheel
+twine
+check-manifest
+flake8
+isort
+black
+django-debug-toolbar
+

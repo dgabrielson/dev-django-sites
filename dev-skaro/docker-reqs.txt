@@ -1,0 +1,5 @@
+psycopg2
+
+-e /opt/src/django-eparch
+-e /opt/src/django-authldap-utils
+-e /opt/src/django-skaro-siteconf

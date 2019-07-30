@@ -1,0 +1,30 @@
+{
+    "DEBUG": true,
+    "USE_DEBUG_TOOLBAR": true,
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "dept_courses",
+            "USER": "django",
+            "PASSWORD": "django",
+            "HOST": "localhost",
+            "PORT": ""
+        }
+    },
+    "CACHES": {
+        "default": {
+            "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+            "LOCATION": "stats-site"
+        }
+    },
+    "AUTH_LDAP_BIND_DN": "XXXXXXXX",
+    "AUTH_LDAP_BIND_PASSWORD": "XXXXXXXX",
+    "AUTH_LDAP_CACHE_GROUPS": false,
+    "UOFM_LDAP_CREATE_UNKNOWN_USERS": true,
+    "ALLOWED_HOSTS": ["localhost", "127.0.0.1"],
+    "SECRET_KEY": "daves-office-imac-prodtest-stats-site-secret-key",
+    "MEDIA_ROOT": "/Users/gabriels/__storage/dept-courses/media",
+    "STATIC_ROOT": "/Users/gabriels/__storage/dept-courses/static",
+    "GUARDED_MODEL_ADMIN_ENABLED": true,
+    "USE_HAYSTACK": true
+}

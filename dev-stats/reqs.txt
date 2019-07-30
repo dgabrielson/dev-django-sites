@@ -1,0 +1,50 @@
+-r ../common-reqs.txt
+
+Django
+psycopg2
+
+python-memcached
+pdfminer.six
+
+
+#-e git+git@github.com:dgabrielson/django-datetimepicker.git#egg=django-datetimepicker
+-e hg+ssh://dave@home.gabrielson.ca/dcg-datetimepicker#egg=dcg-datetimepicker
+
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-classes#egg=django-dept-classes
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-committee#egg=django-dept-committee
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-directory#egg=django-dept-directory
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-download#egg=django-dept-download
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-gradebook#egg=django-dept-gradebook
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-gradstudents#egg=django-dept-gradstudents
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-job-postings#egg=django-dept-job-postings
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-pages#egg=django-dept-pages
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-personpages#egg=django-dept-personpages
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-publications#egg=django-dept-publications
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-seminars#egg=django-dept-seminars
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-students#egg=django-dept-students
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-swingtime#egg=django-dept-swingtime
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-webreg#egg=django-dept-webreg
+-e hg+ssh://dave@home.gabrielson.ca/django-fileshare#egg=django-fileshare
+-e hg+ssh://dave@home.gabrielson.ca/django-shouts#egg=django-shouts
+-e hg+ssh://dave@home.gabrielson.ca/django-uofm#egg=django-uofm
+-e hg+ssh://dave@home.gabrielson.ca/django-webcal#egg=django-webcal
+-e hg+ssh://dave@home.gabrielson.ca/python-spreadsheet#egg=python-spreadsheet
+-e hg+ssh://dave@home.gabrielson.ca/python-gnuplot-data#egg=python-gnuplot-data
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-maillist#egg=django-dept-maillist
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-exams#egg=django-dept-exams
+-e hg+ssh://dave@home.gabrielson.ca/python-latex#egg=python-latex
+-e hg+ssh://dave@home.gabrielson.ca/django-mathjax#egg=django-mathjax
+-e hg+ssh://dave@home.gabrielson.ca/django-djtwit#egg=django-djtwit
+-e hg+ssh://dave@home.gabrielson.ca/python-imgobjdet#egg=python-imgobjdet
+-e hg+ssh://dave@home.gabrielson.ca/django-face-detect#egg=django-face-detect
+-e hg+ssh://dave@home.gabrielson.ca/django-markuphelpers#egg=django-markuphelpers
+-e hg+ssh://dave@home.gabrielson.ca/django-admin-export#egg=django-admin-export
+-e hg+ssh://dave@home.gabrielson.ca/django-latex#egg=django-latex
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-mgmt#egg=django-dept-mgmt
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-appoint#egg=django-dept-appoint
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-studentperms#egg=django-dept-studentperms
+-e hg+ssh://dave@home.gabrielson.ca/django-digital-signage#egg=django-digital-signage
+
+-e hg+ssh://dave@home.gabrielson.ca/django-stats-siteconf#egg=django-stats-siteconf
+-e hg+ssh://dave@home.gabrielson.ca/django-dept-courseplanning#egg=django-dept-courseplanning
+-e hg+ssh://dave@home.gabrielson.ca/django-science-templates#egg=django-science-templates

@@ -1,0 +1,64 @@
+{
+    "DEBUG": true,
+    "USE_DEBUG_TOOLBAR": true,
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "www_stats",
+            "USER": "django",
+            "PASSWORD": "django",
+            "HOST": "localhost",
+            "PORT": ""
+        }
+    },
+    "CACHES": {
+        "default": {
+            "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+            "LOCATION": "stats-site"
+        }
+    },
+    "AUTH_LDAP_BIND_DN": "XXXXXXXX",
+    "AUTH_LDAP_BIND_PASSWORD": "XXXXXXXX",
+    "AUTH_LDAP_CACHE_GROUPS": false,
+    "UOFM_LDAP_CREATE_UNKNOWN_USERS": true,
+    "ALLOWED_HOSTS": ["localhost", "127.0.0.1"],
+    "SECRET_KEY": "prodtest-stats-site-secret-key",
+    "MEDIA_ROOT": "/Users/gabriels/__storage/stats/__storage",
+    "STATIC_ROOT": "/Users/gabriels/__storage/stats/static",
+    "GUARDED_MODEL_ADMIN_ENABLED": true,
+    "USE_HAYSTACK": true,
+    "USE_SENDFILE_ACCEL": false,
+    "GRADUATE_STUDENT_CONFIG": {
+        "jsi18n_url": "/jsi18n/",
+        "storage_kwargs": {
+            "location": "/Users/gabriels/__storage/stats/gradstudent-paperwork"
+        },
+        "use_sendfile": false,
+        "directory:typefilter_list": [
+            ["phd-students", "phd_filter"],
+            ["msc-students", "msc_filter"]
+        ],
+        "funding:allow-historical": true,
+        "funding:use-select2": true,
+        "directory:graduation_date_cutoff": null,
+        "directory:defense_date_grace": null
+    },
+    "FILESHARE_CONFIG": {
+        "use_sendfile": false,
+        "share_path": "/Users/gabriels/__storage/stats/__share"
+    },
+    "DJTWIT_CONFIG": {
+        "consumer_key": "XXXXXXXX",
+        "consumer_secret": "XXXXXXXX",
+        "key": "XXXXXXXX",
+        "secret": "XXXXXXXX",
+        "screen_name": "StatsUMan",
+        "retweet_users": ["StatFact", "ProbFact" ]
+    },
+    "GRADEBOOK_CONFIG": {
+        "spreadsheet-upload:file-storage-kwargs": {
+            "location": "/Users/gabriels/__storage/stats/tmp-marksupload",
+            "base_url": null
+        }
+    }
+}

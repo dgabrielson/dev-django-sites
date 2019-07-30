@@ -1,0 +1,54 @@
+
+dn: cn=mathstaff,ou=Groups,{{ LDAP_BASE_DN }}
+changeType: add
+objectClass: posixGroup
+cn: mathstaff
+gidNumber: 5000
+
+dn: cn=mathgradst,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: mathgradst
+gidNumber: 5001
+
+dn: cn=mathstudent,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: mathstudent
+gidNumber: 5002
+
+dn: cn=postdoc,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: postdoc
+gidNumber: 5003
+
+dn: cn=visitor,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: visitor
+gidNumber: 5004
+
+dn: cn=collaborator,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: collaborator
+gidNumber: 5005
+
+dn: cn=extstaff,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: extstaff
+gidNumber: 5006
+
+dn: cn=extgradst,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: extgradst
+gidNumber: 5007
+
+dn: cn=extstudent,ou=Groups,{{ LDAP_BASE_DN }}
+changetype: add
+objectClass: posixGroup
+cn: extgradst
+gidNumber: 5008

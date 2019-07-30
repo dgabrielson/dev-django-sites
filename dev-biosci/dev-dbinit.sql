@@ -1,0 +1,1 @@
+CREATE DATABASE biosci_db WITH OWNER django;

@@ -1,0 +1,37 @@
+{
+    "DEBUG": true,
+    "USE_DEBUG_TOOLBAR": true,
+    "ALLOWED_HOSTS": ["localhost", "127.0.0.1"],
+    "UOFM_LDAP_CREATE_UNKNOWN_USERS": false,
+    "AUTH_LDAP_BIND_DN": "XXXXXXXX",
+    "AUTH_LDAP_BIND_PASSWORD": "XXXXXXXX",
+    "HTTPS_ENABLED": false,
+    "DATABASES": {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "biosci_db",
+            "USER": "django",
+            "PASSWORD": "django",
+            "HOST": "localhost",
+            "PORT": ""
+        }
+    },
+    "HAYSTACK_CONNECTIONS": {
+        "default": {
+            "ENGINE": "haystack.backends.whoosh_backend.WhooshEngine",
+            "PATH": "/Users/gabriels/__storage/biosci/whoosh_index",
+            "STORAGE": "file",
+            "POST_LIMIT": 134217728,
+            "INCLUDE_SPELLING": false,
+            "BATCH_SIZE": 100
+        }
+    },
+    "MEDIA_ROOT": "/Users/gabriels/__storage/biosci/media",
+    "STATIC_ROOT": "/Users/gabriels/__storage/biosci/static",
+    "GRADUATE_STUDENT_CONFIG": {
+        "jsi18n_url": "/jsi18n/",
+        "storage_kwargs": {
+            "location": "/Users/gabriels/__storage/biosci/gradstudent-paperwork"
+        }
+    }
+}
