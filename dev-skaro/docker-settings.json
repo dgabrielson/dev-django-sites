@@ -10,14 +10,14 @@
             "ENGINE": "django.db.backends.postgresql_psycopg2",
             "NAME": "skaro_dev",
             "USER": "skaro",
-            "PASSWORD": ".az/kbJ[z0^R",
+            "PASSWORD": "XXXXXXXX",
             "HOST": "db00",
             "PORT": ""
         },
         "ldap": {
             "ENGINE": "ldapdb.backends.ldap",
             "NAME": "ldap://ldap00",
-            "PASSWORD": "NuzuPiwjZuma8;",
+            "PASSWORD": "XXXXXXXX",
             "USER": "cn=admin,dc=math,dc=umanitoba,dc=ca"
         }
     },
@@ -28,7 +28,7 @@
     "LDAP_GROUP_BASE_DN": "ou=groups,dc=math,dc=umanitoba,dc=ca",
     "AUTH_LDAP_SERVER_URI": "ldap://ldap00",
     "AUTH_LDAP_BIND_DN": "cn=admin,dc=math,dc=umanitoba,dc=ca",
-    "AUTH_LDAP_BIND_PASSWORD": "NuzuPiwjZuma8;",
+    "AUTH_LDAP_BIND_PASSWORD": "XXXXXXXX",
     "AUTH_LDAP_USER_DN_TEMPLATE": "uid=%(user)s,ou=people,dc=math,dc=umanitoba,dc=ca",
     "AUTH_LDAP_START_TLS": false,
     "AUTH_LDAP_USER_ATTR_MAP": {
